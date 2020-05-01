@@ -493,7 +493,7 @@ import {Calculator} from './shortestpaths'
                         vj = e[lcs.si - 1];
                         vi = f[lcs.ti - 1];
                     } else {
-                        u = e[lcs.si + lcs.length - 2];
+                        u = e[lcs.si + lcs.length - 2] || f[lcs.ti + lcs.length - 2];
                         vi = e[lcs.si + lcs.length];
                         vj = f[lcs.ti + lcs.length];
                     }
